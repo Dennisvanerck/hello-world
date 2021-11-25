@@ -312,11 +312,6 @@ summary(res.cox)
 #1jaar
 res.cox <- coxph(Surv(observatietijd365, overleden_1jaar==1) ~ combi2+Age+ geslacht+EURO2+NYHA+COPD+LVF+Accessroute+CKD , data = df)
 summary(res.cox)
-#5jaar
+#4-year
 res.cox <- coxph(Surv(observatietijd, Overleden==1) ~ combi2+Age+ geslacht+EURO2+NYHA+COPD+LVF+Accessroute+CKD , data = df)
 summary(res.cox)
-        
-
-
-
-
